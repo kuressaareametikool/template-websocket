@@ -11,12 +11,12 @@ var app = http.createServer(
 var io = require('socket.io')(app);
 
 console.log(
-  'Server is running\n' +
+  '\nServer is running\n' +
   'Access the client in this machine: http://localhost:' + port + '\n' +
   'or in the local network: http://' + ip.address() + ':' + port + '\n' +
   'Press Ctrl-C to stop server'
 )
 
 io.on('connection', function (socket) {
-  socket.emit('message', { hello: 'world'});
+  socket.emit('message', { msg: 'Hello world!'});
 });

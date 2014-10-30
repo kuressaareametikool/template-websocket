@@ -2,6 +2,6 @@ var socket = io();
 
 socket.on('message', function(data) {
 
-	$('.message').text(data.hello)
+	$('.message').text(data.msg)
 
 });
