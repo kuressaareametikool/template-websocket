@@ -1,0 +1,14 @@
+{
+  "name": "template-websocket",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "install": "cp -R 'node_modules/jquery' public/vendor/."
+  },
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "ecstatic": "~0.5.5",
+    "socket.io": "~1.2.0",
+    "ip": "~0.3.2"
+  }
+}
