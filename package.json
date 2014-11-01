@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "install": "cp -R 'node_modules/jquery' public/vendor/."
+    "install": "modules=(jquery) && cp -R \"${modules[@]/#/node_modules/}\" public/vendor/."
   },
   "dependencies": {
     "jquery": "~2.1.1",
